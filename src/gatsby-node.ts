@@ -298,6 +298,8 @@ export const sourceNodes: GatsbyNode['sourceNodes'] = async (
           }, [] as string[]),
         ),
       )
+      
+      sanityDocTypes.push('SanityMuxVideo', 'SanityMuxVideoAsset')
 
       // 3/4. From these types, get all nodes from store that are created from this plugin.
       // (we didn't use args.getNodes() as that'd be too expensive - hence why we limit it to Sanity-only types)
